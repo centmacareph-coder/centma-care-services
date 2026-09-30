@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "media"
+public_folder: "/media"
+
+site_url: "https://YOUR-SITE.netlify.app"
+
+collections:
+  - name: "site"
+    label: "Website Content"
+    files:
+      - label: "Main Website Content"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Brand"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Company Name", name: "name", widget: "string"}
+              - {label: "Slogan", name: "slogan", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "WhatsApp Number", name: "whatsapp", widget: "string"}
+              - {label: "Email Addresses", name: "emails", widget: "list"}
+          - label: "Homepage Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Hero Image", name: "image", widget: "image", required: false}
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+          - label: "Locations"
+            name: "locations"
+            widget: "object"
+            fields:
+              - {label: "Port Harcourt Address", name: "portHarcourt", widget: "string"}
+              - {label: "Cities Served", name: "cities", widget: "list"}
+          - label: "Website Images"
+            name: "images"
+            widget: "object"
+            fields:
+              - {label: "Hero Image", name: "hero", widget: "image", required: false}
+              - {label: "About Image", name: "about", widget: "image", required: false}
+              - {label: "Caregiving Image", name: "caregiving", widget: "image", required: false}
+              - {label: "Training Image", name: "training", widget: "image", required: false}
+              - {label: "Housekeeping Image", name: "housekeeping", widget: "image", required: false}

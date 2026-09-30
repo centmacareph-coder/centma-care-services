@@ -1,0 +1,30 @@
+{
+  "brand": {
+    "name": "CENTMA CARE SERVICES",
+    "slogan": "Caring with Love",
+    "phone": "09160006043",
+    "whatsapp": "2349160006043",
+    "emails": ["centmacareph@gmail.com", "carecentma@yahoo.com"]
+  },
+  "hero": {
+    "eyebrow": "PROFESSIONAL CARE & HOME SUPPORT",
+    "title": "Care That Brings Comfort Home.",
+    "description": "Professional care, training, housekeeping and cleaning services delivered with compassion, dignity and high standards.",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=85"
+  },
+  "about": {
+    "title": "Care That Goes Beyond the Ordinary",
+    "text": "Centma Care Services was created to meet the everyday needs of individuals and families who need a helping hand at home — from caring for vulnerable loved ones to keeping homes comfortable, organised and clean."
+  },
+  "locations": {
+    "portHarcourt": "Old Aba Road, Opposite Customary Court, Rumuogba, Port Harcourt",
+    "cities": ["Port Harcourt", "Lagos", "Benin", "Warri"]
+  },
+  "images": {
+    "hero": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=85",
+    "about": "https://images.unsplash.com/photo-1559234938-b60fff04894d?auto=format&fit=crop&w=1200&q=85",
+    "caregiving": "https://images.unsplash.com/photo-1576765608866-5b51046452be?auto=format&fit=crop&w=1200&q=85",
+    "training": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+    "housekeeping": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85"
+  }
+}
