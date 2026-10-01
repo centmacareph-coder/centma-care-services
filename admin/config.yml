@@ -1,14 +1,9 @@
 backend:
-  name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
 
 media_folder: "media"
 public_folder: "/media"
-
-site_url: "https://YOUR-SITE.netlify.app"
 
 collections:
   - name: "site"
