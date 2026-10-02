@@ -3,16 +3,6 @@ const nav=document.querySelector('.nav');
 menuBtn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);});
 document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
-document.getElementById('contactForm')?.addEventListener('submit',function(e){
-  e.preventDefault();
-  const data=new FormData(this);
-  const name=data.get('name')||'';
-  const phone=data.get('phone')||'';
-  const service=data.get('service')||'';
-  const message=data.get('message')||'';
-  const text=`Hello Centma Care Services,%0A%0AMy name is ${encodeURIComponent(name)}.%0APhone/WhatsApp: ${encodeURIComponent(phone)}.%0AService: ${encodeURIComponent(service)}.%0AMessage: ${encodeURIComponent(message)}.%0A%0AI would like to make an enquiry.`;
-  window.open(`https://wa.me/2349160006043?text=${text}`,'_blank');
-});
 
 // Editable website content: values are read from content/site.json.
 // When the site is connected to the CMS, changes made there appear here without editing HTML.

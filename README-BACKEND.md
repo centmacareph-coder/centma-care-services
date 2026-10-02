@@ -37,3 +37,7 @@ The CMS edits `content/site.json` and uploads images to `media/`.
 Do not put passwords, payment-card information or private credentials in this project.
 
 The visual design remains the approved Polished Homepage V2. The CMS changes are intended to affect editable content and media only.
+
+## Success page fix
+Forms now submit to the root-level `/success.html`, which avoids directory/pretty-URL 404 issues.
+The Contact form is no longer intercepted by JavaScript, so Netlify can capture its submission.
