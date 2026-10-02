@@ -28,3 +28,14 @@ document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>na
     // The site still works with its built-in fallback content if the JSON is unavailable.
   }
 })();
+// Load editable Centma website content from Decap CMS
+fetch('/content/site.json')
+  .then(response => response.json())
+  .then(site => {
+    if (site.slogan) {
+      document.querySelectorAll('[data-cms="slogan"]').forEach(el => {
+        el.textContent = site.slogan;
+      });
+    }
+  })
+  .catch(error => console.log('CMS content not loaded:', error));
